@@ -6,24 +6,42 @@
     <title>Document</title>
 </head>
     <style>
-        #adi{
+        /* #adi{
             border: 3px solid black;
             height: 300px;
             width: 300px;
             background-color: blueviolet;
-        }
+        } */
     </style>
-<body>
-    <div id="adi">
+<body id="myid">
+    <button onclick="red()">RED</button>
+    <button onclick="green()">GREEN</button>
+    <button onclick="blue()">BLUE</button>
+
+    <script>
+        function red(){
+            document.getElementById("myid").style.backgroundColor="red";
+        }
+        function green(){
+            document.getElementById("myid").style.backgroundColor="green";
+        }
+        function blue(){
+            document.getElementById("myid").style.backgroundColor="blue";
+        }
+    </script>
+
+
+
+    <!-- <div id="adi">
         <button onclick="abes()">click</button>
         <p id="aaa"></p>
-    </div>
+    </div> -->
     
-    <script>
+    <!-- <script>
         function abes()
         {
             document.getElementById("aaa").innerHTML="hello";
         }
-    </script>
+    </script> -->
 </body>
 </html>
