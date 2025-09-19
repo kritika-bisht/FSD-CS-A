@@ -52,7 +52,7 @@ function register(){
  //                                     displayData();
  //                         });
  //                 });
- //             });
+ //          });
  // });
  
  // using Promise
@@ -62,7 +62,7 @@ function register(){
  //           .then(displayData)
  //           .catch((err)=>{console.log('Error: '+err)})
  //           .finally(()=>{console.log('Inside Finally')})
- async function f1(){
+ async function f1(){   
     try{
   await register();
   await sendEmail();
