@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        height: 300px;
+        width: 300px;
+        border: 3px solid black;
+        background-color: bisque;
+    }
+    #image{
+        border: 1px solid black;
+        border-radius : 50%;
+        height: 30px;
+        width: 30px;
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <center>
+    <div id="box">
+        <img id="image"   src="count.jpg">
+        <h2>Counter App</h2>
+        <br>
+        <p id="show"></p>
+        <br>
+        <button onclick="add()">+</button>
+        <button onclick="sub()">-</button>
+    </div>
+    </center>
+
+    <script>
+        let count=0;
+        function add()
+        {
+            if(count<10){
+                count++;
+                document.getElementById("show").textContent=count;
+            }else{
+                document.getElementById("show").textContent=" maximum limit";
+            }
+                
+       
+        }
+        function sub()
+        {
+            if(count>0){
+                count--;
+                document.getElementById("show").textContent=count;
+            }else{
+                document.getElementById("show").textContent="minimum limit";
+            }
+           
+       
+        }
+    </script>
+</body>
+</html>
