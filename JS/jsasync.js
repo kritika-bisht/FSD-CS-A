@@ -5,8 +5,7 @@ function register(){
        resolve();
      },9000)
     })
-     
-     
+        
  }
  function sendEmail(){
       return new Promise((resolve,reject)=>{
