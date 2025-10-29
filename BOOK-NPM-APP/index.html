@@ -3,10 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book react app</title>
+    <title>App using JS-DOM</title>
+    <style>
+    .card{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            color:red;
+            border: 2px solid green;
+            border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+            text-align: center;
+                  }
+            .booklist{
+                display: flex;
+            }
+    </style>
 </head>
 <body>
-    <div id="root"></div>
-    <script src="index.jsx"></script>
+    <h1><center>BOOK STORE</center></h1>
+
+    <div id="root">
+
+    </div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
